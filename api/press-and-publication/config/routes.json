@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/press-and-publications",
+      "handler": "press-and-publication.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/press-and-publications/count",
+      "handler": "press-and-publication.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/press-and-publications/:id",
+      "handler": "press-and-publication.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/press-and-publications",
+      "handler": "press-and-publication.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/press-and-publications/:id",
+      "handler": "press-and-publication.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/press-and-publications/:id",
+      "handler": "press-and-publication.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

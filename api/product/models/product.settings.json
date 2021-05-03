@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnails": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "meta": {
+      "type": "string"
+    },
+    "special_text": {
+      "type": "string",
+      "default": "Available to sit and see in the showroom!"
+    },
+    "tearsheet": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "manufacturer": {
+      "via": "products",
+      "model": "manufacturer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "subcategory": {
+      "model": "subcategory",
+      "via": "products"
+    },
+    "mg_badge": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

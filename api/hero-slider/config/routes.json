@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hero-slider",
+      "handler": "hero-slider.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hero-slider",
+      "handler": "hero-slider.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hero-slider",
+      "handler": "hero-slider.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
