@@ -14,6 +14,7 @@
     "knex": "0.21.18",
     "lodash": "^4.17.21",
     "mysql": "2.18.1",
+    "node-querybuilder": "^2.1.1",
     "slugify": "^1.5.0",
     "strapi": "3.6.1",
     "strapi-admin": "3.6.1",

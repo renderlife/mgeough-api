@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/sections/with-manufacturers",
+      "handler": "section.findWithManufacturers",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/sections/slug/:slug",
       "handler": "section.findSlug",
       "config": {
