@@ -31,6 +31,12 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
