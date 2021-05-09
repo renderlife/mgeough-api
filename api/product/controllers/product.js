@@ -23,10 +23,13 @@ module.exports = {
 
         const q = [
             !query.category || `s.category = '${query.category}'`,
-            !query.manfacturer || `p.manufacturer IN (${manufacturers.join(',')})`,
+            !query.manufacturer || `p.manufacturer IN (${manufacturers.join(',')})`,
             !query.subcategory || `p.subcategory IN (${subs.join(',')})`,
             `p.name LIKE '%${query._q || ""}%'`
+
+
         ].filter(v => typeof v === 'string').join(' AND ')
+        console.log(q);
 
         const count = await strapi.connections.default.raw(`SELECT COUNT(p.id) as count FROM products p LEFT JOIN subcategories s ON p.subcategory = s.id WHERE ${q}`)
         return count[0][0] ? count[0][0].count : 0
