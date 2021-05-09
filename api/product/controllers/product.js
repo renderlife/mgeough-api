@@ -13,7 +13,7 @@ module.exports = {
 
         let manufacturers = []
         if (query.manufacturer) {
-            manufacturers = query.manufacturers.split(',').map(n => parseInt(n)).filter(n => isNumber(n))
+            manufacturers = query.manufacturer.split(',').map(n => parseInt(n)).filter(n => isNumber(n))
         }
 
         let subs = []
