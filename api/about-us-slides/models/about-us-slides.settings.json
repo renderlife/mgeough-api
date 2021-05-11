@@ -28,6 +28,10 @@
     },
     "bottom_title": {
       "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
     }
   }
 }
